@@ -3,14 +3,14 @@ package money;
 /**
  * Created by Serkan.Tugrul on 09/07/2015.
  */
-public class Dollar {
-    public int amount;
+public class Dollar extends Money {
 
     public Dollar(int amount) {
-        this.amount = amount;
+        super(amount);
     }
 
-    public Dollar times(int multiplier) {
+    public Money times(int multiplier) {
         return new Dollar(amount * multiplier);
     }
 }
+
